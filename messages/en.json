@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Asawer",
+    "subtitle": "Crafting the Future, Building the Legacy",
+    "cta": "Explore Our Projects"
+  },
+  "about": {
+    "title": "About Us",
+    "vision": "Our Vision",
+    "mission": "Our Mission"
+  },
+  "projects": {
+    "title": "Our Projects",
+    "filter": "Filter",
+    "all": "All",
+    "residential": "Residential",
+    "commercial": "Commercial",
+    "mixed": "Mixed"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Submit"
+    }
+  }
+}
+

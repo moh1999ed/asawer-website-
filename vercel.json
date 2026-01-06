@@ -1,0 +1,9 @@
+{
+  "crons": [
+    {
+      "path": "/api/leads/check-timeout",
+      "schedule": "* * * * *"
+    }
+  ]
+}
+
