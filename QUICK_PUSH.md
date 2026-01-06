@@ -1,42 +1,41 @@
-# 🚀 رفع سريع إلى GitHub
+# 🚀 Quick Push to GitHub
 
-## ⚡ الطريقة الأسهل:
+## ⚡ Easiest Method:
 
-### 1. افتح Terminal واكتب:
+### 1. Open Terminal and type:
 
 ```bash
 cd /Users/mac/Desktop/Asawer_Project_Documentation/asawer-website
 ./push-simple.sh
 ```
 
-### 2. عندما يطلب منك:
+### 2. When prompted:
 - **Username**: `moh1999ed`
-- **Password**: الصق الـ Token (الذي يبدأ بـ `ghp_`)
+- **Password**: Paste the Token (starts with `ghp_`)
 
 ---
 
-## 🔑 إذا لم يكن لديك Token:
+## 🔑 If You Don't Have a Token:
 
-1. اذهب إلى: **https://github.com/settings/tokens/new**
-2. اضغط: **"Generate new token"** → **"Generate new token (classic)"**
-3. اختر الصلاحيات: ✅ **repo** (Full control)
-4. اضغط: **"Generate token"**
-5. انسخ الـ Token فوراً
-
----
-
-## 📝 ملاحظات مهمة:
-
-- ✅ عند لصق الـ Token، تأكد من عدم وجود مسافات
-- ✅ الـ Token يبدأ بـ `ghp_` عادة
-- ✅ لا تشارك الـ Token مع أحد
-- ✅ إذا فشل، أنشئ Token جديد
+1. Go to: **https://github.com/settings/tokens/new**
+2. Click: **"Generate new token"** → **"Generate new token (classic)"**
+3. Select permissions: ✅ **repo** (Full control)
+4. Click: **"Generate token"**
+5. Copy the Token immediately
 
 ---
 
-## 🆘 إذا استمرت المشكلة:
+## 📝 Important Notes:
 
-أرسل لي:
-1. الرسالة التي تظهر في Terminal
-2. تأكد من أن الـ Token صحيح
+- ✅ When pasting the Token, make sure there are no extra spaces
+- ✅ The Token usually starts with `ghp_`
+- ✅ Don't share the Token with anyone
+- ✅ If it fails, create a new Token
 
+---
+
+## 🆘 If the Problem Persists:
+
+Send me:
+1. The error message from Terminal
+2. Make sure the Token is correct

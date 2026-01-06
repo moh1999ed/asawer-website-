@@ -1,54 +1,51 @@
-# كيفية تشغيل الموقع
+# How to Run the Website
 
-## الطريقة السريعة:
+## Quick Method:
 
 ```bash
 cd /Users/mac/Desktop/Asawer_Project_Documentation/asawer-website
 ./FIX_AND_START.sh
 ```
 
-## الطريقة اليدوية:
+## Manual Method:
 
-1. افتح Terminal
-2. اذهب للمجلد:
+1. Open Terminal
+2. Navigate to the folder:
 ```bash
 cd /Users/mac/Desktop/Asawer_Project_Documentation/asawer-website
 ```
 
-3. أوقف أي عملية على المنفذ 3000:
+3. Stop any process on port 3000:
 ```bash
 lsof -ti:3000 | xargs kill -9
 ```
 
-4. احذف مجلد .next:
+4. Delete .next folder:
 ```bash
 rm -rf .next
 ```
 
-5. شغّل الخادم:
+5. Run the server:
 ```bash
 npm run dev
 ```
 
-6. افتح المتصفح على:
+6. Open browser at:
 ```
 http://localhost:3000/ar
 ```
 
-## للتحقق من أن الموقع يعمل:
+## To Verify the Website is Working:
 
-افتح:
+Open:
 ```
 http://localhost:3000/ar/test-simple
 ```
 
-إذا رأيت "✅ الموقع يعمل!" يعني أن المشكلة في الصفحة الرئيسية وليس في الخادم.
+If you see "✅ Website is working!" it means the problem is in the homepage, not the server.
 
-## إذا استمرت المشكلة:
+## If the Problem Persists:
 
-1. افتح Developer Console (F12)
-2. افحص الأخطاء في Console
-3. أرسل لي الأخطاء
-
-
-
+1. Open Developer Console (F12)
+2. Check errors in Console
+3. Send me the errors

@@ -1,68 +1,67 @@
-# 🚀 طريقة رفع المشروع إلى GitHub
+# 🚀 How to Push Project to GitHub
 
-## الطريقة السهلة (موصى بها):
+## Easy Method (Recommended):
 
-### 1. شغّل السكريبت:
+### 1. Run the script:
 ```bash
 cd /Users/mac/Desktop/Asawer_Project_Documentation/asawer-website
 ./push-with-token.sh
 ```
 
-### 2. عندما يطلب منك Token:
-- الصق الـ Token الذي أنشأته من GitHub
-- اضغط Enter
-- سيتم الرفع تلقائياً!
+### 2. When prompted for Token:
+- Paste the Token you created from GitHub
+- Press Enter
+- It will push automatically!
 
 ---
 
-## الطريقة اليدوية:
+## Manual Method:
 
-### إذا كان لديك Token:
+### If you have a Token:
 
 ```bash
 cd /Users/mac/Desktop/Asawer_Project_Documentation/asawer-website
 
-# استبدل YOUR_TOKEN بالـ Token الفعلي
+# Replace YOUR_TOKEN with your actual Token
 git remote set-url origin https://YOUR_TOKEN@github.com/moh1999ed/asawer-website-.git
 
-# ارفع الكود
+# Push the code
 git push -u origin main
 
-# بعد الرفع، أعد تعيين Remote (للمستقبل)
+# After pushing, reset Remote (for future)
 git remote set-url origin https://github.com/moh1999ed/asawer-website-.git
 ```
 
 ---
 
-## الطريقة البديلة (استخدام Token مباشرة):
+## Alternative Method (Using Token directly):
 
 ```bash
 cd /Users/mac/Desktop/Asawer_Project_Documentation/asawer-website
 
-# استبدل YOUR_TOKEN بالـ Token الفعلي
+# Replace YOUR_TOKEN with your actual Token
 git push https://YOUR_TOKEN@github.com/moh1999ed/asawer-website-.git main
 ```
 
 ---
 
-## ملاحظات مهمة:
+## Important Notes:
 
-1. ✅ تأكد من أن الـ Token لديه صلاحيات `repo` (كامل)
-2. ✅ لا تشارك الـ Token مع أحد
-3. ✅ الـ Token يبدأ بـ `ghp_` عادة
-4. ✅ عند نسخ الـ Token، تأكد من عدم نسخ مسافات إضافية
+1. ✅ Make sure the Token has `repo` permissions (full)
+2. ✅ Don't share the Token with anyone
+3. ✅ The Token usually starts with `ghp_`
+4. ✅ When copying the Token, make sure there are no extra spaces
 
 ---
 
-## إذا استمرت المشكلة:
+## If the Problem Persists:
 
-1. تحقق من صحة الـ Token:
-   - اذهب إلى: https://github.com/settings/tokens
-   - تأكد من وجود Token نشط
+1. Check Token validity:
+   - Go to: https://github.com/settings/tokens
+   - Make sure there's an active Token
 
-2. أنشئ Token جديد:
+2. Create a new Token:
    - https://github.com/settings/tokens/new
-   - اختر: repo (Full control)
+   - Select: repo (Full control)
 
-3. تأكد من الاتصال بالإنترنت
-
+3. Make sure you have internet connection

@@ -1,147 +1,147 @@
-# دليل لوحة التحكم الشاملة
+# Complete Admin Panel Guide
 
-## نظرة عامة
+## Overview
 
-تم إنشاء لوحة تحكم شاملة لإدارة جميع جوانب الموقع، تتضمن:
+A comprehensive admin panel has been created to manage all aspects of the website, including:
 
-### المميزات الرئيسية:
+### Main Features:
 
-1. **إدارة المشاريع** - إضافة وتعديل وحذف المشاريع
-2. **متابعة طلبات العملاء** - متابعة طلبات العملاء لكل مشروع منفصل
-3. **إدارة العملاء** - إدارة قاعدة بيانات العملاء
-4. **إدارة الوكلاء** - إدارة وكلاء المبيعات
-5. **إدارة المحتوى** - تعديل جميع النصوص والمحتوى في الموقع
-6. **إدارة الصور** - رفع وتعديل الصور
-7. **إدارة الإحصائيات** - تعديل الإحصائيات المعروضة (المساحات، عدد البنايات، إلخ)
-8. **إدارة الموظفين** - إضافة وتعديل الموظفين والصلاحيات
-9. **التواصل العام** - إدارة رسائل التواصل من الموقع
+1. **Project Management** - Add, edit, and delete projects
+2. **Customer Lead Tracking** - Track customer requests for each project separately
+3. **Customer Management** - Manage customer database
+4. **Agent Management** - Manage sales agents
+5. **Content Management** - Edit all texts and content on the website
+6. **Image Management** - Upload and edit images
+7. **Statistics Management** - Edit displayed statistics (areas, number of buildings, etc.)
+8. **Staff Management** - Add and edit staff members and permissions
+9. **General Contact** - Manage contact messages from the website
 
-## تسجيل الدخول
+## Login
 
-### الطريقة الأولى: استخدام بيانات البيئة
-- البريد: `admin@asawer.om`
-- كلمة المرور: `Asawer123!@#`
+### Method 1: Using Environment Variables
+- Email: `admin@asawer.om`
+- Password: `Asawer123!@#`
 
-### الطريقة الثانية: استخدام قاعدة البيانات
-1. قم بإنشاء موظف جديد من صفحة "الموظفين"
-2. استخدم البريد الإلكتروني وكلمة المرور المسجلة
+### Method 2: Using Database
+1. Create a new staff member from the "Staff" page
+2. Use the registered email and password
 
-## الصفحات المتاحة
+## Available Pages
 
-### 1. لوحة التحكم الرئيسية (`/admin/dashboard`)
-- عرض إحصائيات سريعة
-- آخر العملاء
-- نظرة عامة على المشاريع
+### 1. Main Dashboard (`/admin/dashboard`)
+- Display quick statistics
+- Recent customers
+- Overview of projects
 
-### 2. إدارة المشاريع (`/admin/projects`)
-- إضافة مشروع جديد
-- تعديل المشاريع الموجودة
-- حذف المشاريع
-- إدارة تفاصيل المشروع (الاسم، السعر، الحالة، النوع)
+### 2. Project Management (`/admin/projects`)
+- Add new project
+- Edit existing projects
+- Delete projects
+- Manage project details (name, price, status, type)
 
-### 3. متابعة طلبات العملاء (`/admin/project-leads`)
-- عرض طلبات العملاء مجمعة حسب المشروع
-- تغيير حالة الطلب
-- إضافة ملاحظات لكل عميل
-- عرض تفاصيل كاملة لكل طلب
+### 3. Customer Lead Tracking (`/admin/project-leads`)
+- View customer requests grouped by project
+- Change request status
+- Add notes for each customer
+- View complete details for each request
 
-### 4. إدارة العملاء (`/admin/leads`)
-- عرض جميع العملاء
-- إضافة عميل جديد
-- تعديل بيانات العميل
-- تغيير حالة العميل
+### 4. Customer Management (`/admin/leads`)
+- View all customers
+- Add new customer
+- Edit customer data
+- Change customer status
 
-### 5. إدارة الوكلاء (`/admin/agents`)
-- إدارة وكلاء المبيعات
-- تفعيل/إلغاء تفعيل الوكيل
+### 5. Agent Management (`/admin/agents`)
+- Manage sales agents
+- Activate/deactivate agent
 
-### 6. إدارة المحتوى (`/admin/content`)
-- تعديل جميع النصوص في الموقع
-- البحث في المحتوى
-- تصفية حسب القسم
-- دعم النصوص العادية، HTML، و Markdown
+### 6. Content Management (`/admin/content`)
+- Edit all texts on the website
+- Search content
+- Filter by section
+- Support for plain text, HTML, and Markdown
 
-**أقسام المحتوى:**
-- `hero` - قسم البطل الرئيسي
-- `about` - قسم من نحن
-- `projects` - قسم المشاريع
-- `team` - قسم الفريق
-- `contact` - قسم التواصل
-- `footer` - التذييل
-- `stats` - الإحصائيات
-- `news` - الأخبار
+**Content Sections:**
+- `hero` - Hero section
+- `about` - About section
+- `projects` - Projects section
+- `team` - Team section
+- `contact` - Contact section
+- `footer` - Footer
+- `stats` - Statistics
+- `news` - News
 
-### 7. إدارة الصور (`/admin/images`)
-- رفع صور جديدة
-- تعديل معلومات الصور
-- حذف الصور
-- تصنيف الصور حسب الفئة
-- ربط الصور بالمشاريع
+### 7. Image Management (`/admin/images`)
+- Upload new images
+- Edit image information
+- Delete images
+- Categorize images by category
+- Link images to projects
 
-**فئات الصور:**
-- `hero` - صور البطل الرئيسي
-- `project` - صور المشاريع
-- `team` - صور الفريق
-- `gallery` - معرض الصور
-- `about` - صور قسم من نحن
-- `logo` - الشعارات
-- `other` - أخرى
+**Image Categories:**
+- `hero` - Hero images
+- `project` - Project images
+- `team` - Team images
+- `gallery` - Image gallery
+- `about` - About section images
+- `logo` - Logos
+- `other` - Other
 
-### 8. إدارة الإحصائيات (`/admin/statistics`)
-- إضافة إحصائية جديدة
-- تعديل القيم (المساحات، عدد البنايات، إلخ)
-- تفعيل/إلغاء تفعيل الإحصائية
-- ترتيب عرض الإحصائيات
+### 8. Statistics Management (`/admin/statistics`)
+- Add new statistic
+- Edit values (areas, number of buildings, etc.)
+- Activate/deactivate statistic
+- Order statistics display
 
-**ملاحظة:** الإحصائيات الخاصة بتفاعل العملاء (مثل عدد الزيارات) يتم حسابها تلقائياً ولا تحتاج تعديل.
+**Note:** Statistics related to customer interaction (such as number of visits) are calculated automatically and don't need manual editing.
 
-### 9. إدارة الموظفين (`/admin/staff`)
-- إضافة موظف جديد
-- تعديل بيانات الموظف
-- تغيير كلمة المرور
-- تحديد الصلاحيات (محرر، مدير، مدير عام)
-- تفعيل/إلغاء تفعيل الموظف
+### 9. Staff Management (`/admin/staff`)
+- Add new staff member
+- Edit staff data
+- Change password
+- Set permissions (editor, admin, super admin)
+- Activate/deactivate staff
 
-**الأدوار:**
-- `editor` - محرر: يمكنه تعديل المحتوى فقط
-- `admin` - مدير: يمكنه إدارة جميع المحتويات
-- `super_admin` - مدير عام: صلاحيات كاملة
+**Roles:**
+- `editor` - Editor: Can only edit content
+- `admin` - Admin: Can manage all content
+- `super_admin` - Super Admin: Full permissions
 
-### 10. التواصل العام (`/admin/contact`)
-- عرض جميع رسائل التواصل
-- تصفية حسب الحالة (جديد، مقروء، تم الرد، مؤرشف)
-- الرد على الرسائل
-- أرشفة الرسائل
+### 10. General Contact (`/admin/contact`)
+- View all contact messages
+- Filter by status (new, read, replied, archived)
+- Reply to messages
+- Archive messages
 
-## قاعدة البيانات
+## Database
 
-### الجداول الجديدة:
+### New Tables:
 
-1. **staff** - الموظفين
-2. **content** - المحتوى القابل للتعديل
-3. **images** - الصور
-4. **statistics** - الإحصائيات القابلة للتعديل
-5. **auto_statistics** - الإحصائيات التلقائية (لتفاعل العملاء)
-6. **contact_messages** - رسائل التواصل
+1. **staff** - Staff members
+2. **content** - Editable content
+3. **images** - Images
+4. **statistics** - Editable statistics
+5. **auto_statistics** - Automatic statistics (for customer interaction)
+6. **contact_messages** - Contact messages
 
-### تشغيل قاعدة البيانات:
+### Running the Database:
 
-1. افتح Supabase Dashboard
-2. اذهب إلى SQL Editor
-3. قم بتشغيل ملف `src/lib/database-schema-extended.sql`
+1. Open Supabase Dashboard
+2. Go to SQL Editor
+3. Run the file `src/lib/database-schema-extended.sql`
 
-## التثبيت
+## Installation
 
-### 1. تثبيت الحزم المطلوبة:
+### 1. Install Required Packages:
 
 ```bash
 npm install bcryptjs
 npm install --save-dev @types/bcryptjs
 ```
 
-### 2. إعداد متغيرات البيئة:
+### 2. Set Environment Variables:
 
-أضف إلى ملف `.env.local`:
+Add to `.env.local` file:
 
 ```env
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
@@ -152,28 +152,27 @@ ADMIN_PASSWORD=Asawer123!@#
 ADMIN_SESSION_SECRET=your-secret-key-change-in-production
 ```
 
-### 3. تشغيل قاعدة البيانات:
+### 3. Run Database:
 
-قم بتشغيل ملف SQL الموجود في `src/lib/database-schema-extended.sql`
+Run the SQL file located at `src/lib/database-schema-extended.sql`
 
-## الأمان
+## Security
 
-- جميع الصفحات محمية بنظام المصادقة
-- كلمات المرور مشفرة باستخدام bcrypt
-- الجلسات محمية بـ HTTP-only cookies
-- التحقق من الصلاحيات في كل عملية
+- All pages are protected by authentication system
+- Passwords are encrypted using bcrypt
+- Sessions are protected with HTTP-only cookies
+- Permission verification on every operation
 
-## ملاحظات مهمة
+## Important Notes
 
-1. **رفع الصور:** حالياً يستخدم النظام روابط مباشرة. في الإنتاج، يجب استخدام خدمة تخزين مثل AWS S3 أو Cloudinary.
+1. **Image Upload:** Currently uses direct links. In production, use a storage service like AWS S3 or Cloudinary.
 
-2. **الإحصائيات التلقائية:** يتم حسابها تلقائياً عند تفاعل العملاء مع الموقع. لا تحتاج تعديل يدوي.
+2. **Automatic Statistics:** Calculated automatically when customers interact with the website. No manual editing needed.
 
-3. **النسخ الاحتياطي:** يُنصح بعمل نسخ احتياطي منتظم لقاعدة البيانات.
+3. **Backup:** Regular database backups are recommended.
 
-4. **الأداء:** استخدم الفلاتر والبحث لتسهيل إدارة البيانات الكبيرة.
+4. **Performance:** Use filters and search to facilitate management of large data.
 
-## الدعم
+## Support
 
-للمساعدة أو الإبلاغ عن مشاكل، يرجى التواصل مع فريق التطوير.
-
+For help or to report issues, please contact the development team.
