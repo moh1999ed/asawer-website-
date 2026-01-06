@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabaseAdmin } from '@/lib/supabase';
+import { supabaseAdmin } from '@/lib/utils/supabase';
 
 // Simple password hashing (replace with bcryptjs in production)
 async function hashPassword(password: string): Promise<string> {

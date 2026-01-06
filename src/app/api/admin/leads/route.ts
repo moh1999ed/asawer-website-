@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { storageData } from '@/lib/admin-utils';
-import { type Lead } from '@/lib/admin-config';
+import { storageData } from '@/lib/admin/admin-utils';
+import { type Lead } from '@/lib/admin/admin-config';
 
 export async function GET(request: NextRequest) {
   try {

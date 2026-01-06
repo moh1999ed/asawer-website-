@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import AdminLayout from '@/components/AdminLayout';
+import AdminLayout from '@/components/admin/AdminLayout';
 import { Plus, Trash2, Edit2, Save, X } from 'lucide-react';
-import { PROJECT_STATUSES, PROJECT_TYPES, type Project } from '@/lib/admin-config';
+import { PROJECT_STATUSES, PROJECT_TYPES, type Project } from '@/lib/admin/admin-config';
 
 export default function ProjectsPage() {
   const [projects, setProjects] = useState<Project[]>([]);

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createLeadAndAssign } from '@/lib/lead-distribution';
+import { createLeadAndAssign } from '@/lib/utils/lead-distribution';
 
 export async function POST(request: NextRequest) {
   try {

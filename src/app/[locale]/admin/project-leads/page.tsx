@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import AdminLayout from '@/components/AdminLayout';
+import AdminLayout from '@/components/admin/AdminLayout';
 import { Building2, User, Phone, Mail, MessageSquare, Calendar, Filter } from 'lucide-react';
-import { type Project } from '@/lib/admin-config';
+import { type Project } from '@/lib/admin/admin-config';
 
 interface ProjectLead {
   id: string;

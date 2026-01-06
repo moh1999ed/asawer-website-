@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import AdminLayout from '@/components/AdminLayout';
+import AdminLayout from '@/components/admin/AdminLayout';
 import { Plus, Upload, Edit2, Trash2, Image as ImageIcon, Search } from 'lucide-react';
-import { type Project } from '@/lib/admin-config';
+import { type Project } from '@/lib/admin/admin-config';
 
 interface ImageItem {
   id?: string;

@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import AdminLayout from '@/components/AdminLayout';
+import AdminLayout from '@/components/admin/AdminLayout';
 import { Plus, Trash2, Edit2 } from 'lucide-react';
-import { LEAD_STATUSES, type Lead } from '@/lib/admin-config';
+import { LEAD_STATUSES, type Lead } from '@/lib/admin/admin-config';
 
 export default function LeadsPage() {
   const [leads, setLeads] = useState<Lead[]>([]);

@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import ProjectDetails from '@/components/ProjectDetails';
+import Header from '@/components/common/Header';
+import Footer from '@/components/sections/Footer';
+import ProjectDetails from '@/components/common/ProjectDetails';
 
 export default async function ProjectDetailPage({
   params,

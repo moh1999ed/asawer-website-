@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getAdminSession } from '@/lib/admin-utils';
+import { getAdminSession } from '@/lib/admin/admin-utils';
 
 export async function GET(request: NextRequest) {
   try {

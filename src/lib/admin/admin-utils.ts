@@ -1,6 +1,6 @@
 import { cookies } from 'next/headers';
 import { ADMIN_EMAIL, ADMIN_PASSWORD, type AdminUser } from './admin-config';
-import { supabaseAdmin } from './supabase';
+import { supabaseAdmin } from '../utils/supabase';
 
 // Simple password comparison (replace with bcryptjs in production)
 async function comparePassword(password: string, hash: string): Promise<boolean> {

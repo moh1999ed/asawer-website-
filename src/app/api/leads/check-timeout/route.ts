@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { checkAndReassignTimedOutLeads } from '@/lib/lead-distribution';
+import { checkAndReassignTimedOutLeads } from '@/lib/utils/lead-distribution';
 
 // This endpoint should be called periodically (e.g., every minute via cron job)
 export async function GET() {

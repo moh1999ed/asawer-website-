@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import AdminLayout from '@/components/AdminLayout';
+import AdminLayout from '@/components/admin/AdminLayout';
 import { Plus, Trash2, Edit2 } from 'lucide-react';
-import { type Agent } from '@/lib/admin-config';
+import { type Agent } from '@/lib/admin/admin-config';
 
 export default function AgentsPage() {
   const [agents, setAgents] = useState<Agent[]>([]);

@@ -4,29 +4,29 @@ import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useParams } from 'next/navigation';
 import dynamic from 'next/dynamic';
-import LuxuryHeader from '@/components/LuxuryHeader';
-import LuxuryHero from '@/components/LuxuryHero';
-import AboutSection from '@/components/AboutSection';
-import CEOSection from '@/components/CEOSection';
-import LuxuryTeam from '@/components/LuxuryTeam';
-import VisionSection from '@/components/VisionSection';
-import ValuesSection from '@/components/ValuesSection';
-import WhatsAppButton from '@/components/WhatsAppButton';
+import LuxuryHeader from '@/components/sections/LuxuryHeader';
+import LuxuryHero from '@/components/sections/LuxuryHero';
+import AboutSection from '@/components/sections/AboutSection';
+import CEOSection from '@/components/sections/CEOSection';
+import LuxuryTeam from '@/components/sections/LuxuryTeam';
+import VisionSection from '@/components/sections/VisionSection';
+import ValuesSection from '@/components/sections/ValuesSection';
+import WhatsAppButton from '@/components/sections/WhatsAppButton';
 
 // Lazy load components for better performance
-const FeaturedProjects = dynamic(() => import('@/components/FeaturedProjects'), {
+const FeaturedProjects = dynamic(() => import('@/components/sections/FeaturedProjects'), {
   loading: () => <div className="h-96 flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-asawer-secondary-500"></div></div>,
 });
-const LuxuryStats = dynamic(() => import('@/components/LuxuryStats'), {
+const LuxuryStats = dynamic(() => import('@/components/sections/LuxuryStats'), {
   loading: () => <div className="h-96 flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-asawer-secondary-500"></div></div>,
 });
-const NewsSection = dynamic(() => import('@/components/NewsSection'), {
+const NewsSection = dynamic(() => import('@/components/sections/NewsSection'), {
   loading: () => <div className="h-96 flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-asawer-secondary-500"></div></div>,
 });
-const ContactFormSection = dynamic(() => import('@/components/ContactFormSection'), {
+const ContactFormSection = dynamic(() => import('@/components/sections/ContactFormSection'), {
   loading: () => <div className="h-96 flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-asawer-secondary-500"></div></div>,
 });
-const Footer = dynamic(() => import('@/components/Footer'));
+const Footer = dynamic(() => import('@/components/sections/Footer'));
 
 export default function HomePage() {
   const params = useParams();

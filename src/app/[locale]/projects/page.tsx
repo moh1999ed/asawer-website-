@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import ProjectsGrid from '@/components/ProjectsGrid';
+import Header from '@/components/common/Header';
+import Footer from '@/components/sections/Footer';
+import ProjectsGrid from '@/components/common/ProjectsGrid';
 
 export default async function ProjectsPage({
   params,
